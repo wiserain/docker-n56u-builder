@@ -1,0 +1,10 @@
+version: '2.3'
+
+services:
+  n56u:
+    container_name: n56u
+    image: chulwoo/n56u
+    build:
+      context: ${DOCKER_ROOT}/n56u
+    volumes:
+      - ${DOCKER_ROOT}/n56u/firmware:/firmware
